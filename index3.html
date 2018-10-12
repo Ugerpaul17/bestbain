@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <style>
+        input {
+              background:#00ccfffd;
+              color:#fff;
+              padding:10px;
+              font-size: 30px;
+              border-radius: 10px;
+              border: 0px;
+              outline: none;
+
+              
+        }
+        #btn{
+            background: #23cd32;
+            border: 0px;
+            border-radius: 10px;
+            outline: none;
+            color:#fff;
+            font-size: 30px;
+            box-shadow: 3px 3px 3px rgba(0,0,0,0.5);
+
+
+        }
+        #btn:hover{
+            background: #1b5e20;
+            transform: translateY(4px);
+             box-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+
+        }
+
+    </style>
+
+  <h2>Enter Your Age</h2>
+   <input id="first" type="number" />
+
+   <h2>Enter Your Sleeping Hours</h2>
+   <input id="second" type="number" />
+
+   <h2>Hours Wasted</h2>
+   <input id="hours"  type="number" /><br>
+
+   <button id="btn" onclick="calc()">Calculate</button>
+
+   <script>
+       function calc() {
+           var x = Number(document.getElementById("first").value);
+           var y = Number(document.getElementById("second").value);
+           var dia = 365;
+           var z = x*y*dia;
+           document.getElementById("hours").value=z;
+
+           
+       }
+
+   </script>
+
+</body>
+
+</html>

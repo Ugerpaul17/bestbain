@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2></h2>
+
+<form>
+  Enter your Age:
+  <input id="first" type="number" name="txtnum1">
+  <br><br>
+ Enter your sleeping Hours:
+<input id="second" type="number"  name="txtnum2">
+<br><br>
+ Your hours wasted:
+<input id="hours" type="number"  name="txtres">
+<br><br>
+  <input type="button" value="Calculate" onClick="sumvalues()">
+</form>
+<script type="text/javascript">
+    function sumvalues() {
+        var num1, num2, res;
+        num1=Number(doucment.formcalc.txtnum1.value);
+        num2 = Number(doucment.formcalc.txtnum2.value);
+        res=num1+num2;
+        document.formcalc.txtres.value=res;
+    }
+</script>
+
+</body>
+</html>

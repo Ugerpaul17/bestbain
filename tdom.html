@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>DOM TYPE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+
+    <h1 id="cool">Hello World!</h1>
+
+    <h2 id="angle">Working with Javascript and DOM it is pretty cool stuff and I love it.</h2>
+
+    <p id="demo" > Without Javascript </p>
+
+    <p id="tp"> </p>
+
+    <p id="kol"></p>
+
+    <p id="sm"> </p>
+
+    <p id="cv"></p>
+
+    <script>
+        var myelement = document.getElementById('cool');
+        var x = document.getElementsByTagName('p');
+        var y = document.getElementById('angle').style.color ="green"
+    //    document.getElementById('cool').innerHTML = "GITHUB"; 
+        document.getElementById('demo').innerHTML = "Yes finally something";
+        document.getElementById('tp').innerHTML =   "make it happen: " + myelement.innerHTML;
+        document.getElementById('kol').innerHTML = "The first paragraph (index 0) is "
+        + x[0].innerHTML;
+
+        var Samsung = [];
+//      var stt = "";
+
+        for(i = 0; i < x.length; i++)
+        {
+            Samsung.push(x[i].innerHTML);
+ //           sst += x[i].innerHTML + " ";
+        }
+
+        document.getElementById('sm').innerHTML = Samsung;
+      
+
+    </script>
+    <script>
+    document.write(Date());
+    </script>
+
+</body>
+</html>
